@@ -1,6 +1,7 @@
 // 1. On click add input form inner.html/value? to newly created li element (with delete button?)
 // 2. On press reset, clear all li elements
 // add `<li>${newTask__input}</li>`
+// 3. if (taskList.innerHTML has stuff in it, or all the li elements checkboxes are ticked) {change taskNumber.innerHTML to "All tasks completed, good job!"}
 
 const resetBtn = document.getElementById("hero_reset-btn")
 
@@ -11,7 +12,7 @@ const taskSubmit = document.getElementById("newTask__submit-btn");
 const taskNumber = document.getElementById("task__number")
 
 const createTask = () => {
-    taskList.innerHTML += `<li>${taskInput.value}</li>`
+    taskList.innerHTML += `<li><input type="checkbox">${taskInput.value}</li>`
     taskInput.value = "";
 };
 
