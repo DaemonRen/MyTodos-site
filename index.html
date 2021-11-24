@@ -30,20 +30,21 @@
             </p>
         </div>
     </header>
+    <!--FORM-->
     <section id="newTask">
         <form id="newTask__form" action="#">
-            <input type="text" placeholder="Add your task here...">
+            <input type="text" placeholder="Add your task here..." id="newTask__input">
         </form>
         <button id="newTask__submit-btn">+</button>
     </section>
+    <!--LIST-->
     <section id="taskList">
         <h3 id="taskList__title">Tasks</h3>
-        <div>
-            <ul id="taskList__list">
-
-            </ul>
+        <div id="taskList__container">
+            <ul id="taskList__list"></ul>
         </div>
         <p id="task__number"> All tasks completed, good job!</p>
     </section>
+    <script src="app.js" defer></script>
 </body>
 </html>
