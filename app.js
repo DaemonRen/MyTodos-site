@@ -11,9 +11,13 @@ const taskInput = document.getElementById("newTask__input")
 const taskSubmit = document.getElementById("newTask__submit-btn");
 const taskNumber = document.getElementById("task__number")
 
+let counter = [];
+
 const createTask = () => {
     taskList.innerHTML += `<li><input type="checkbox">${taskInput.value}</li>`
     taskInput.value = "";
+    counter++
+    console.log(counter);
 };
 
 const clearPage = () => {
@@ -24,7 +28,7 @@ taskSubmit.addEventListener("click", createTask)
 
 resetBtn.addEventListener("click", clearPage)
 
-// if (taskList.innerHTML != "") {
-//     taskNumber.innerHTML = "Test"
-// }
+if (taskList.innerHTML != "") {
+    taskNumber.innerHTML = "Test"
+}
 
