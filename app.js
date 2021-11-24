@@ -1,3 +1,6 @@
+// Brief specified "working prototype", so fuck styling
+// Brief specified "so they can view it on their mobiles", so fuck desktop and tablet
+
 // 1. On click add input form inner.html/value? to newly created li element (with delete button?)
 // 2. On press reset, clear all li elements
 // add `<li>${newTask__input}</li>`
@@ -12,23 +15,29 @@ const taskSubmit = document.getElementById("newTask__submit-btn");
 const taskNumber = document.getElementById("task__number")
 
 let counter = [];
+console.log(counter);
 
 const createTask = () => {
-    taskList.innerHTML += `<li><input type="checkbox">${taskInput.value}</li>`
+    taskList.innerHTML += `<li><input type="checkbox" class="checkBox">${taskInput.value}</li>`
     taskInput.value = "";
     counter++
     console.log(counter);
+    if (counter === 0) {
+        taskNumber.innerHTML = "Test"
+    } else {
+        taskNumber.innerHTML = `You have ${counter} tasks left to complete`
+    }
 };
 
 const clearPage = () => {
-    taskList.innerHTML = ""
+    taskList.innerHTML = "";
+    counter = [];
+    taskNumber.innerHTML = " All tasks completed, good job!"
 }
 
 taskSubmit.addEventListener("click", createTask)
 
 resetBtn.addEventListener("click", clearPage)
 
-if (taskList.innerHTML != "") {
-    taskNumber.innerHTML = "Test"
-}
+
 

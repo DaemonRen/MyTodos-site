@@ -35,6 +35,10 @@
         padding-top: 5vh;
         margin: 6vw;
 
+        #taskList__title {
+            margin-bottom: 4vh;
+        }
+
         #taskList__list {
             list-style: none;
         }
@@ -46,5 +50,11 @@
 }
 
 li {
-    margin: 6vw;
+    margin-bottom: 5vw;
+    // min-width: 50vw;
+    background-color: rgba(194, 194, 194, 0.521);
+}
+
+.checkBox {
+    margin-right: 4vw;
 }
