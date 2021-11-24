@@ -8,24 +8,35 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 20px;
+        margin: 6vw;
         margin-bottom: 13vh;
 
         .hero__title {
             font-size: medium;
         }
 
-        #hero_reset-btn {
-
-        }
     }
 
     .hero__statement-title {
-        margin: 20px;
+        margin: 6vw;
     }
 
     .hero__statement-text {
-        margin: 20px;
+        margin: 6vw;
         font-size: 16px;
+    }
+
+    #newTask {
+        display: flex;
+        justify-content: center;
+    }
+
+    #taskList {
+        padding-top: 5vh;
+        margin: 6vw;
+    }
+
+    #task__number {
+        margin-top: 3vh;
     }
 }
